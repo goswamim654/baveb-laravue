@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -13,7 +12,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>Beveb | Admin</title>
   <!-- Theme style -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+  <link rel="stylesheet" href="{{URL::asset('css/app.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -196,9 +195,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-dashboard"></i>
+          <li class="nav-item has-treeview {{ Request::path() == 'common/basicSettings/units' ? 'menu-open' : '' }}">
+            <a href="#" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}">
+              <i class="nav-icon fa fa-th"></i>
               <p>
                 Common
                 <i class="right fa fa-angle-left"></i>
@@ -206,7 +205,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{ route('units') }}" class="nav-link">
+                <a href="{{ route('units') }}" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Basic Settings</p>
                 </a>
@@ -219,6 +218,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
             </ul>
           </li>
+          <!-- <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fa fa-dashboard"></i>
+              <p>
+                Starter Pages
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Active Page</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Inactive Page</p>
+                </a>
+              </li>
+            </ul>
+          </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-th"></i>
@@ -269,6 +291,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- jQuery -->
 <!-- AdminLTE App -->
-<script src="{{ mix('js/app.js') }}"></script>
+<script src="{{URL::asset('js/app.js')}}"></script>
 </body>
 </html>
