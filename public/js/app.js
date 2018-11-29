@@ -47422,6 +47422,91 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -47444,21 +47529,170 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card card-default" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
+    return _c("div", { staticClass: "card card-primary card-outline" }, [
+      _c("div", { staticClass: "card-body" }, [
+        _c(
+          "table",
+          {
+            staticClass: "table table-bordered table-striped",
+            attrs: { id: "example1" }
+          },
+          [
+            _c("thead", [
+              _c("tr", [
+                _c("th", [_vm._v("Units")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Description")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Shortform")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Physical")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Factor")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Basic Unity")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Block")]),
+                _vm._v(" "),
+                _c("th", [_vm._v("Action")])
+              ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
+            _c("tbody", [
+              _c("tr", [
+                _c("td", [_vm._v("Trident")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    "Internet\n                    Explorer 4.0\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Trident")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    "Internet\n                    Explorer 4.0\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Trident")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    "Internet\n                    Explorer 4.0\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Trident")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    "Internet\n                    Explorer 4.0\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Trident")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    "Internet\n                    Explorer 4.0\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")])
+              ]),
+              _vm._v(" "),
+              _c("tr", [
+                _c("td", [_vm._v("Trident")]),
+                _vm._v(" "),
+                _c("td", [
+                  _vm._v(
+                    "Internet\n                    Explorer 4.0\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("Win 95+")]),
+                _vm._v(" "),
+                _c("td", [_vm._v(" 4")]),
+                _vm._v(" "),
+                _c("td", [_vm._v("X")])
+              ])
             ])
-          ])
-        ])
+          ]
+        )
       ])
     ])
   }

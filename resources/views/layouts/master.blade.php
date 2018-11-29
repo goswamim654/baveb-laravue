@@ -13,7 +13,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <title>Beveb | Admin</title>
   <!-- Theme style -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="{{ mix('css/app.css') }}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -59,7 +59,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="img/man.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="{{URL::asset('/img/man.png')}}" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -75,7 +75,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="img/man.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{URL::asset('/img/man.png')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -91,7 +91,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="img/man.png" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="{{URL::asset('/img/man.png')}}" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -174,7 +174,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link text-center">
-      <img src="img/beveb-logo.png" alt="Beveb Logo" class="brand-image elevation-3"
+      <img src="{{URL::asset('/img/beveb-logo.png')}}" alt="Beveb Logo" class="brand-image elevation-3"
            style="float:none;">
       <span class="brand-text font-weight-light" style="display:none;">V</span>
     </a>
@@ -184,10 +184,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="img/man.png" class="img-circle elevation-2" alt="User Image">
+          <img src="{{URL::asset('/img/man.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Beveb Admin</a>
+          <a href="{{ route('home') }}" class="d-block">Beveb Admin</a>
         </div>
       </div>
 
@@ -206,7 +206,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('units') }}" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Basic Settings</p>
                 </a>
@@ -236,26 +236,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <div class="content">
+    
       @yield('content')
     </div>
     <!-- /.content -->
@@ -288,6 +269,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- jQuery -->
 <!-- AdminLTE App -->
-<script src="js/app.js"></script>
+<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
