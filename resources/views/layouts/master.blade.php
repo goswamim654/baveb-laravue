@@ -18,6 +18,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{URL::asset('css/app.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/dataTables.bootstrap4.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper" id="app">
@@ -74,7 +75,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="{{ route('home') }}" class="brand-link text-center" style="background: #fff;">
+    <a href="{{ route('home') }}" class="brand-link text-center" style="background: #f2f4f6;">
       <img src="{{URL::asset('/img/beveb-logo.png')}}" alt="Beveb Logo" class="brand-image elevation-3"
            style="float:none; box-shadow: none;">
       <span class="brand-text font-weight-light" style="display:none;">V</span>
@@ -106,17 +107,147 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
             <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{{ route('units') }}" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}">
-                  <i class="fas fa-square-full"></i>
-                  <p>Basic Settings</p>
+              <li class="nav-item has-treeview {{ Request::path() == 'common/basicSettings/units' ? 'menu-open' : '' }}">
+                <a href="#" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}"> 
+                  <i class="fas fa-square-full ml-2 mr-1"></i>
+                  <p>Basic Settings <i class="right fa fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{ route('units') }}" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}"> 
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Units</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Currencies</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Languages</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Countries</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Regions</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Banks</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Lines of Bussiness</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Price List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Terms of Payment</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Terms of Delivery</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>First free Numbers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Number Groups</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Default Settings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Basic Definations</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fas fa-square-full"></i>
-                  <p>Basic Setting</p>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="fas fa-square-full ml-2 mr-1"></i>
+                  <p>Basic Setting <i class="right fa fa-angle-left"></i></p>
                 </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Company Parameters</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Employees</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Cost Centers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Warehouse Management</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Cas Registers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Tax Rates</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <p>Bak Holidays</p>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
@@ -181,5 +312,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 <!-- js -->
   <script src="{{URL::asset('js/app.js')}}"></script>
+  <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/jquery.dataTables.js"></script>
+  <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/dataTables.bootstrap4.js"></script>
+  <script>
+    $(function () {
+      $('#units').DataTable();
+    });
+  </script>
 </body>
 </html>
