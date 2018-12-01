@@ -18,51 +18,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="{{URL::asset('css/app.css')}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/dataTables.bootstrap4.css">
-  <style type="text/css">
-    .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active { 
-      background-color: #28a745;
-    }
-    .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active, .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active:hover {
-        color: #28a745;
-        background-color: transparent;
-    }
-    .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-treeview {
-      background: #1a2432;
-    }
-    .nav-sidebar .nav-item > .nav-link {
-      margin-bottom: 0;
-    }
-    .table td {
-      padding: .25rem .75rem;
-    }
-    .table th {
-      padding: .5rem .75rem; 
-    }
-    .table th, .table td  {
-      vertical-align: middle; 
-    }
-    body, .dropdown-menu {
-      font-size: .75rem;
-    }
-    .content-header {
-      padding: 10px 0.5rem;
-    }
-    .content-header h1 {
-      font-size: 1.5rem;
-    }
-    .input-group-sm > .form-control, .input-group-sm > .input-group-append > .btn {
-      height: calc(1.68125rem + 10px);
-      padding: 0.25rem 0.75rem;
-    }
-    .search-form {
-      width: 70%;
-    }
-    .search-form .input-group-sm {
-      width: 100%;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="http://themetrace.com/template/bracket/lib/datatables/jquery.dataTables.css">
+  <link rel="stylesheet" type="text/css" href="http://themetrace.com/template/bracket/css/bracket.css">
+  <link rel="stylesheet" href="{{URL::asset('css/custom.css')}}">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper" id="app">
@@ -90,7 +48,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </div>
       </div>
     </form>
-
+    <!-- <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link cd-search-trigger" href="#search">Advance Search</a>
+      </li>
+    </ul> -->
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item dropdown">
@@ -115,7 +77,88 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </ul>
   </nav>
   <!-- /.navbar -->
+  <!-- Advance Search Form -->
+  <div id="search" class="cd-main-search">
+      <form>
+        <div class="search-input">
+          <input type="search" placeholder="Suche...">
+        </div>
 
+        <div class="cd-search-suggestions">
+          <div class="box-body">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <div class="form-group">
+                        <label for="arznei" class="sr-only">Arznei</label>
+                        <select id="arznei" class="form-control" name="arznei">
+                          <option value="">Arznei Wahlen</option>
+                          <option value="AFG">Afghanistan</option>
+                          <option value="ALB">Albania</option>
+                          <option value="DZA">Algeria</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="kapitel" class="sr-only">Kapitel</label>
+                        <select id="kapitel" class="form-control" name="kapitel">
+                          <option value="">Kapitel Wahlen</option>
+                          <option value="AFG">Afghanistan</option>
+                          <option value="ALB">Albania</option>
+                          <option value="DZA">Algeria</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="potenz" class="sr-only">potenz</label>
+                        <select id="potenz" class="form-control" name="potenz">
+                          <option value="">Potenz Wahlen</option>
+                          <option value="AFG">Afghanistan</option>
+                          <option value="ALB">Albania</option>
+                          <option value="DZA">Algeria</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <div class="form-group">
+                        <label for="quella" class="sr-only">quella</label>
+                        <select id="quella" class="form-control" name="quella">
+                          <option value="">Quella Wahlen</option>
+                          <option value="AFG">Afghanistan</option>
+                          <option value="ALB">Albania</option>
+                          <option value="DZA">Algeria</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="version" class="sr-only">version</label>
+                        <select id="version" class="form-control" name="version">
+                          <option value="">Version Wahlen</option>
+                          <option value="AFG">Afghanistan</option>
+                          <option value="ALB">Albania</option>
+                          <option value="DZA">Algeria</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="Unklarheiten" class="sr-only">Unklarheiten</label>
+                        <select id="Unklarheiten" class="form-control" name="Unklarheiten">
+                          <option value="">Unklarheiten</option>
+                          <option value="ja">Ja</option>
+                          <option value="nein">Nein</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button class="btn btn-success" type="submit" id="advSearch">Suche</button>
+                      <button class="btn btn-default" type="button" id="advSearchCancelBtn">Abbrechen</button>
+                    </div>
+                  </div>  
+              
+              </div>
+        </div> <!-- .cd-search-suggestions -->
+
+        <a class="close"></a>
+      </form>
+    </div> <!-- .cd-main-search -->
+  <!-- End Advance Search -->
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -143,7 +186,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview {{ Request::path() == 'common/basicSettings/units' ? 'menu-open' : '' }}">
-            <a href="#" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}">
+            <a href="#" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }} {{ Request::path() == 'home' ? 'active' : '' }}">
               <i class="fas fa-cog mr-1"></i>
               <p>
                 Common
@@ -353,15 +396,65 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </footer>
 </div>
 <!-- ./wrapper -->
-
+<div class="cd-cover-layer"></div>
 <!-- js -->
   <script src="{{URL::asset('js/app.js')}}"></script>
-  <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/jquery.dataTables.js"></script>
-  <script src="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/dataTables.bootstrap4.js"></script>
+  <script src="http://themetrace.com/template/bracket/lib/datatables/jquery.dataTables.js"></script>
+  <script src="http://themetrace.com/template/bracket/lib/datatables-responsive/dataTables.responsive.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
   <script>
-    $(function () {
-      $('#units').DataTable();
-    });
+    $('#units').DataTable({
+  responsive: true,
+  language: {
+    searchPlaceholder: 'Search...',
+    sSearch: '',
+    lengthMenu: '_MENU_ items',
+  }
+});
+    jQuery(document).ready(function($){
+  var resizing = false,
+    searchForm = $('.cd-main-search'),
+    searchTrigger = $('.cd-search-trigger'),
+    coverLayer = $('.cd-cover-layer');
+  
+
+  function closeSearchForm() {
+    searchTrigger.removeClass('search-form-visible');
+    searchForm.removeClass('is-visible');
+    coverLayer.removeClass('search-form-visible');
+  }
+
+  //add the .no-pointerevents class to the <html> if browser doesn't support pointer-events property
+  ( !Modernizr.testProp('pointerEvents') ) && $('html').addClass('no-pointerevents');
+
+
+  searchTrigger.on('click', function(event){
+    event.preventDefault();
+    if( searchTrigger.hasClass('search-form-visible') ) {
+      searchForm.find('form').submit();
+    } else {
+      searchTrigger.addClass('search-form-visible');
+      coverLayer.addClass('search-form-visible');
+      searchForm.addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+        searchForm.find('input[type="search"]').focus().end().off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
+      });
+    }
+  });
+
+  //close search form
+  searchForm.on('click', '.close', function(){
+    closeSearchForm();
+  });
+
+  coverLayer.on('click', function(){
+    closeSearchForm();
+  });
+  
+  $(document).keyup(function(event){
+    if( event.which=='27' ) closeSearchForm();
+  });
+
+});
   </script>
 </body>
 </html>

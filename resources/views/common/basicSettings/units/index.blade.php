@@ -12,7 +12,7 @@
               </div><!-- /.col -->
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
                   <li class="breadcrumb-item">Common</li>
                   <li class="breadcrumb-item">Basic Settings</li>
                   <li class="breadcrumb-item active">Uints</li>
@@ -32,7 +32,7 @@
 			        </div> -->
 			        <!-- /.card-header -->
 			        <div class="card-body">
-			            <table id="units" class="table table-bordered table-striped">
+			            <table id="units" class="table dataTable display responsive nowrap dataTable no-footer dtr-inline collapsed">
 			                <thead>
 			                    <tr>
 			                        <th>Units</th>
@@ -56,7 +56,7 @@
 			                        <td>{{$unit->conv}}</td>
 			                        <td>{{$unit->basu}}</td>
 			                        <td>{{$unit->crnd}}</td>
-			                        <td><a href="#" class="btn btn-success btn-sm"><i class="fas fa-pencil-alt fa-xs"></i></a></td>
+			                        <td><a href="#"><i class="fas fa-pencil-alt fa-xs"></i></a></td>
 			                    </tr>
 			                    @endforeach
 			                </tbody>
