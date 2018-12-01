@@ -19,6 +19,50 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://adminlte.io/themes/dev/AdminLTE/plugins/datatables/dataTables.bootstrap4.css">
+  <style type="text/css">
+    .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active { 
+      background-color: #28a745;
+    }
+    .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active, .sidebar-dark-primary .nav-treeview > .nav-item > .nav-link.active:hover {
+        color: #28a745;
+        background-color: transparent;
+    }
+    .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-treeview {
+      background: #1a2432;
+    }
+    .nav-sidebar .nav-item > .nav-link {
+      margin-bottom: 0;
+    }
+    .table td {
+      padding: .25rem .75rem;
+    }
+    .table th {
+      padding: .5rem .75rem; 
+    }
+    .table th, .table td  {
+      vertical-align: middle; 
+    }
+    body, .dropdown-menu {
+      font-size: .75rem;
+    }
+    .content-header {
+      padding: 10px 0.5rem;
+    }
+    .content-header h1 {
+      font-size: 1.5rem;
+    }
+    .input-group-sm > .form-control, .input-group-sm > .input-group-append > .btn {
+      height: calc(1.68125rem + 10px);
+      padding: 0.25rem 0.75rem;
+    }
+    .search-form {
+      width: 70%;
+    }
+    .search-form .input-group-sm {
+      width: 100%;
+    }
+
+  </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper" id="app">
@@ -36,7 +80,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </ul>
 
     <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
+    <form class="form-inline ml-3 search-form">
       <div class="input-group input-group-sm">
         <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
         <div class="input-group-append">
@@ -100,7 +144,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview {{ Request::path() == 'common/basicSettings/units' ? 'menu-open' : '' }}">
             <a href="#" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}">
-              <i class="fas fa-cog"></i>
+              <i class="fas fa-cog mr-1"></i>
               <p>
                 Common
                 <i class="right fa fa-angle-left"></i>
@@ -109,91 +153,91 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <ul class="nav nav-treeview">
               <li class="nav-item has-treeview {{ Request::path() == 'common/basicSettings/units' ? 'menu-open' : '' }}">
                 <a href="#" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}"> 
-                  <i class="fas fa-square-full ml-2 mr-1"></i>
+                  <i class="far fa-circle ml-2 mr-1"></i>
                   <p>Basic Settings <i class="right fa fa-angle-left"></i></p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="{{ route('units') }}" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}"> 
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Units</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Currencies</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Languages</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Countries</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Regions</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Banks</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Lines of Bussiness</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Price List</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Terms of Payment</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Terms of Delivery</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>First free Numbers</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Number Groups</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Default Settings</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Basic Definations</p>
                     </a>
                   </li>
@@ -201,49 +245,49 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
               <li class="nav-item has-treeview">
                 <a href="#" class="nav-link"> 
-                  <i class="fas fa-square-full ml-2 mr-1"></i>
+                  <i class="far fa-circle ml-2 mr-1"></i>
                   <p>Basic Setting <i class="right fa fa-angle-left"></i></p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="#" class="nav-link"> 
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Company Parameters</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Employees</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Cost Centers</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Warehouse Management</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Cas Registers</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Tax Rates</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="fas fa-square-full ml-4 mr-1"></i>
+                      <i class="far fa-circle ml-4 mr-1"></i>
                       <p>Bak Holidays</p>
                     </a>
                   </li>
@@ -276,7 +320,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li> -->
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="fas fa-industry"></i>
+              <i class="fas fa-industry mr-1"></i>
               <p>
                 Distribution
               </p>
