@@ -352,3 +352,7 @@ Content cover layer
     display: block;
     padding: 0.6rem 1rem;
 }
+.table-hover.rowlink tr:hover td,.table-hover .rowlink tr:hover td {
+    background-color:#A1C180 !important;
+    color:#fff !important;
+}

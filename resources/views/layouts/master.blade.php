@@ -10,6 +10,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Beveb | Admin</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!-- Ionicons -->
@@ -30,7 +32,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+        <a class="nav-link" style="padding-top: 5px; font-size: 20px;" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
       <!-- <li class="nav-item d-none d-sm-inline-block">
         <a href="index3.html" class="nav-link">Home</a>
@@ -402,6 +404,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="http://themetrace.com/template/bracket/lib/datatables/jquery.dataTables.js"></script>
   <script src="http://themetrace.com/template/bracket/lib/datatables-responsive/dataTables.responsive.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
   <script>
     $('#units').DataTable({
   responsive: true,
@@ -455,6 +459,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
   });
 
 });
+// load modal
   </script>
+  <div class="modal fade" id="rowlinkModal">
+            <div class="modal-dialog modal-lg" role="document" style="width:800px;">
+              <div class="modal-content">
+                <div class="modal-header pd-y-20 pd-x-25">
+                  <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Units</h6>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="modal-body pd-25 pd-x-35">
+                  <div class="row">
+                <div class="col-sm-2"><label>Units: </label></div>
+                <div class="col-sm-10 autor-value">cm</div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2"><label>Description: </label></div>
+                <div class="col-sm-10 autor-value">Zentimeter</div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2"><label>Short Form: </label></div>
+                <div class="col-sm-10 autor-value">cm</div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2"><label>Physical: </label></div>
+                <div class="col-sm-10 autor-value">Piece</div>
+              </div>
+                </div><!-- modal-body -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div><!-- modal-dialog -->
+          </div>
 </body>
 </html>

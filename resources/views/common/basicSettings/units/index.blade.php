@@ -32,7 +32,7 @@
 			        </div> -->
 			        <!-- /.card-header -->
 			        <div class="card-body">
-			            <table id="units" class="table dataTable display responsive nowrap dataTable no-footer dtr-inline collapsed">
+			            <table id="units" class="table dataTable display responsive nowrap dataTable no-footer dtr-inline collapsed table-hover">
 			                <thead>
 			                    <tr>
 			                        <th>Units</th>
@@ -42,13 +42,14 @@
 			                        <th>Factor</th>
 			                        <th>Basic Unity</th>
 			                        <th>Block</th>
-			                        <th>Action</th>
+			                        <th class="text-center">Action</th>
 			                    </tr>
 			                </thead>
-			                <tbody>
+			                <tbody data-link="row" class="rowlink">
 			                	@foreach($units as $unit)
 			                    <tr>
-			                        <td>{{$unit->unid}}</td>
+			                        <td><a data-toggle="modal" 
+														data-id="{{$unit->unid}}" data-type="unit" data-title="Units" href="#rowlinkModal">{{$unit->unid}}</a></td>
 			                        <td>{{$unit->dsca}}
 			                        </td>
 			                        <td>{{$unit->dscs}}</td>
@@ -56,7 +57,10 @@
 			                        <td>{{$unit->conv}}</td>
 			                        <td>{{$unit->basu}}</td>
 			                        <td>{{$unit->crnd}}</td>
-			                        <td><a href="#"><i class="fas fa-pencil-alt fa-xs"></i></a></td>
+			                        <td class="text-center rowlink-skip">
+			                        	<a href="#" class="btn btn-warning btn-sm" style="height: 23px; padding: 0px 9px;"><i class="fas fa-pencil-alt fa-xs"></i></a> 
+			                        	<a href="#" class="btn btn-danger brn-sm" style="height: 23px; padding: 0px 9px;"><i class="fas fa-trash-alt fa-xs"></i></a>
+			                        </td>
 			                    </tr>
 			                    @endforeach
 			                </tbody>
@@ -71,4 +75,5 @@
 	      </div><!-- /.container-fluid -->
 	  	</div>
 	</div>
+
 @endsection
