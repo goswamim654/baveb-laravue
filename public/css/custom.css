@@ -356,3 +356,30 @@ Content cover layer
     background-color:#A1C180 !important;
     color:#fff !important;
 }
+
+.search-form input:focus {
+  border: 1px solid #00B297 !important;
+  z-index: 10;
+}
+
+.no-sort::before,.no-sort::after { 
+  display: none!important; 
+}
+.dt-body-center {
+    text-align: center;
+    cursor: pointer;
+}
+.search {
+  position: relative;
+}
+.search .fa-search {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 15px;
+    color: #A1C180;
+    z-index: 10;
+}
+.search input {
+  text-indent: 30px;
+}

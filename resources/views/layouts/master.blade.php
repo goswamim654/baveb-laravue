@@ -41,13 +41,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     <!-- SEARCH FORM -->
     <form class="form-inline ml-3 search-form">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
+      <div class="input-group input-group-sm search">
+        <span class="fa fa-search fa-sm"></span>
+        <input type="text" class="form-control" placeholder="Search">
       </div>
     </form>
     <!-- <ul class="navbar-nav">
@@ -407,14 +403,40 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Latest compiled and minified JavaScript -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
   <script>
-    $('#units').DataTable({
-  responsive: true,
-  language: {
-    searchPlaceholder: 'Search...',
-    sSearch: '',
-    lengthMenu: '_MENU_ items',
-  }
-});
+//     $('#units').DataTable({
+//   responsive: true,
+//   language: {
+//     searchPlaceholder: 'Search...',
+//     sSearch: '',
+//     lengthMenu: '_MENU_ items',
+//   }
+// });
+$(document).keydown(function(e) { 
+      if (e.keyCode == 27) { 
+          $("#rowlinkModal").modal('hide');
+      } 
+  });
+table = $('#units').DataTable({
+    "stateSave": true,
+    "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],  
+    "responsive": true,
+      "language": {
+        'searchPlaceholder': 'Search...',
+        'sSearch': '',
+        'lengthMenu': '_MENU_ items'
+      },
+      "order": [[ 1, 'asc' ]],
+    'columnDefs': [{
+     'targets': 0,
+     'searchable': false,
+     'orderable': false,
+     'className': 'dt-body-center',
+     'render': function (data, type, full, meta){
+         return '<input type="checkbox" name="id[]" value="' + $('<div/>').text(data).html() + '">';
+     }
+    }]
+  });
+
     jQuery(document).ready(function($){
   var resizing = false,
     searchForm = $('.cd-main-search'),

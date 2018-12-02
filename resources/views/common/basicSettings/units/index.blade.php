@@ -35,6 +35,7 @@
 			            <table id="units" class="table dataTable display responsive nowrap dataTable no-footer dtr-inline collapsed table-hover">
 			                <thead>
 			                    <tr>
+			                    	<th class="rowlink-skip dt-body-center no-sort"><a class="btn btn-danger btn-sm" style="padding: 0px 6px;" title="Delete"><i class="fas fa-trash-alt fa-xs text-white"></i></a></th>
 			                        <th>Units</th>
 			                        <th>Description</th>
 			                        <th>Shortform</th>
@@ -42,12 +43,13 @@
 			                        <th>Factor</th>
 			                        <th>Basic Unity</th>
 			                        <th>Block</th>
-			                        <th class="text-center">Action</th>
+			                        <th class="text-center no-sort">Action</th>
 			                    </tr>
 			                </thead>
 			                <tbody data-link="row" class="rowlink">
 			                	@foreach($units as $unit)
 			                    <tr>
+			                    	<td class="rowlink-skip"></td>
 			                        <td><a data-toggle="modal" 
 														data-id="{{$unit->unid}}" data-type="unit" data-title="Units" href="#rowlinkModal">{{$unit->unid}}</a></td>
 			                        <td>{{$unit->dsca}}
@@ -58,8 +60,7 @@
 			                        <td>{{$unit->basu}}</td>
 			                        <td>{{$unit->crnd}}</td>
 			                        <td class="text-center rowlink-skip">
-			                        	<a href="#" class="btn btn-warning btn-sm" style="height: 23px; padding: 0px 9px;"><i class="fas fa-pencil-alt fa-xs"></i></a> 
-			                        	<a href="#" class="btn btn-danger brn-sm" style="height: 23px; padding: 0px 9px;"><i class="fas fa-trash-alt fa-xs"></i></a>
+			                        	<a href="#" class="btn btn-warning btn-sm" style="height: 23px; padding: 0px 6px;"><i class="fas fa-pencil-alt fa-xs"></i></a>
 			                        </td>
 			                    </tr>
 			                    @endforeach
