@@ -19,3 +19,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/common/basicSettings/units', 'Common\BasicSettings\UnitsController@index')->name('units');
+Route::get('/common/basicSettings/units/view/{id}', 'Common\BasicSettings\UnitsController@show')->name('unitShow');
+Route::get('/common/basicSettings/units/basicUnity/{id}', 'Common\BasicSettings\UnitsController@basicUnity')->name('basicUnity');

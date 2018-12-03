@@ -1,5 +1,7 @@
 @extends('layouts.master')
-
+<?php 
+$arrayPhysical = array('10' => 'Piece', '20' => 'Length', '30' =>'Area', '40'=> 'Volumina', '50' => 'Weight', '60' => 'Time');
+?>
 @section('content')
 	<!-- Main content -->
     <div class="content">
@@ -54,12 +56,16 @@
 			                        <td>{{$unit->dsca}}
 			                        </td>
 			                        <td>{{$unit->dscs}}</td>
-			                        <td> 4</td>
+			                        <td>
+			                        	@foreach($arrayPhysical as $key => $physical) 
+			                        		@if($unit->tccu == $key) {{ $physical }} @endif
+			                        	@endforeach
+			                        </td>
 			                        <td>{{$unit->conv}}</td>
 			                        <td>{{$unit->basu}}</td>
 			                        <td>{{$unit->crnd}}</td>
 			                        <td class="text-center rowlink-skip">
-			                        	<a href="#" class="btn btn-warning btn-sm" style="height: 23px; padding: 0px 6px;"><i class="fas fa-pencil-alt fa-xs"></i></a>
+			                        	<a data-toggle="modal" data-unid="{{$unit->unid}}" href="#editModal" class="btn btn-warning btn-sm editModalBtn" style="height: 23px; padding: 0px 6px;"><i class="fas fa-pencil-alt fa-xs"></i></a>
 			                        </td>
 			                        <td class="rowlink-skip"></td>
 			                    </tr>

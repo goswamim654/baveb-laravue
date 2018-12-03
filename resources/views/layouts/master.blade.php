@@ -823,63 +823,93 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </li>
                 </ul>
               </li>
-              <!-- <li class="nav-item has-treeview">
+              <li class="nav-item has-treeview">
                 <a href="#" class="nav-link"> 
                   <i class="far fa-circle ml-2 mr-1"></i>
-                  <p>Product Master Data<i class="right fa fa-angle-left"></i></p>
+                  <p>Warehouse Management<i class="right fa fa-angle-left"></i></p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
                     <a href="#" class="nav-link"> 
                       <i class="far fa-circle ml-4 mr-1"></i>
-                      <p>List of Items</p>
+                      <p>Shipments</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="far fa-circle ml-4 mr-1"></i>
-                      <p>Item Typess</p>
+                      <p>Warehouse Receipt</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="far fa-circle ml-4 mr-1"></i>
-                      <p>Item Groups</p>
+                      <p>Warehouse Transaction</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="far fa-circle ml-4 mr-1"></i>
-                      <p>Shop Groups</p>
+                      <p>Stock per Warehouse</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="far fa-circle ml-4 mr-1"></i>
-                      <p>Price Groups</p>
+                      <p>Lots</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="far fa-circle ml-4 mr-1"></i>
-                      <p>Item Signals</p>
+                      <p>Lot Tracking</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="far fa-circle ml-4 mr-1"></i>
-                      <p>Manufacturer</p>
+                      <p>Stock per Item</p>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a href="#" class="nav-link">
                       <i class="far fa-circle ml-4 mr-1"></i>
-                      <p>Alternate Items</p>
+                      <p>Planned Purchase Order</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Parcel</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Delivery Adresses</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Parcel Labels</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Cycle Counting</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Warehouse Management (new)</p>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="nav-item has-treeview">
+              <!-- <li class="nav-item has-treeview">
                 <a href="#" class="nav-link"> 
                   <i class="far fa-circle ml-2 mr-1"></i>
                   <p>Business Partners<i class="right fa fa-angle-left"></i></p>
@@ -1173,6 +1203,167 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li> -->
             </ul>
           </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fas fa-tachometer-alt mr-1"></i>
+              <p>
+                CRM Dashboard
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p> Surveys <i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{ route('units') }}" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Questionaire</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fas fa-money-bill-alt mr-1"></i>
+              <p>
+                Finance Controlling
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Surveys</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fab fa-product-hunt mr-1"></i>
+              <p>
+                Production
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Hours Accounting</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fas fa-wrench mr-1"></i>
+              <p>
+                Tools
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Setup</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fab fa-servicestack mr-1" style="padding-top: 2px; float: left; padding-right: 4px;"></i>
+              <p>
+                Service Fair Stand <br>Construction
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Management Dashboard</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fas fa-file-alt mr-1"></i>
+              <p>
+                Service
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fas fa-cubes mr-1"></i>
+              <p>
+                  Variants
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Item Master</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="fas fa-cogs mr-1"></i>
+              <p>
+                Configurator
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Parameter</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="far fa-question-circle mr-1"></i>
+              <p>
+                Help
+                <i class="right fa fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Menu Tree</p>
+                </a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -1243,5 +1434,123 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
   </div><!-- modal-dialog -->
 </div>
+
+<!-- modal Edit -->
+<div class="modal fade" id="editModal">
+  <div class="modal-dialog modal-lg" role="document" style="width:800px;">
+    <div class="modal-content">
+      <div class="modal-header pd-y-20 pd-x-25">
+        <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Units</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body pd-25 pd-x-35">
+        <div class="form-layout form-layout-1">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label">Units: <span class="tx-danger">*</span></label>
+                  <input class="form-control" id="unit" type="text" name="unit">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label">Description: <span class="tx-danger">*</span></label>
+                  <input class="form-control" id="desc" type="text" name="desc">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label class="form-control-label">Short form: <span class="tx-danger">*</span></label>
+                  <input class="form-control" id="short_form" type="text" name="short_form">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mg-b-10-force">
+                  <label class="form-control-label">Physical: <span class="tx-danger">*</span></label>
+                  <select class="form-control select2" data-placeholder="Choose physical" name="physical" id="physical">
+                    <option label="Choose physical"></option>
+                    @foreach($arrayPhysical as $key => $physical) 
+                      <option value="{{$key}}">{{$physical}}</option>
+                     @endforeach
+                    
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mg-b-10-force">
+                  <label class="form-control-label">Factor: <span class="tx-danger">*</span></label>
+                  <input class="form-control" id="factor" type="text" name="factor">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mg-b-10-force">
+                  <label class="form-control-label">Basic Unity: <span class="tx-danger">*</span></label>
+                  <select class="form-control select2" id="basic_unity" data-placeholder="Basic Unity" name="basic_unity">
+                    <option label="Choose Basic Unity"></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mg-b-10-force">
+                  <label class="form-control-label">Block: <span class="tx-danger">*</span></label>
+                  <input class="form-control" id="block" type="text" name="block">
+                </div>
+              </div>
+            </div><!-- row -->
+
+            
+          </div><!-- form-layout -->
+      </div><!-- modal-body -->
+      <div class="modal-footer form-layout-footer">
+          <button class="btn btn-info">Save Changes</button>
+          <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div><!-- modal-dialog -->
+</div>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+    jQuery('.editModalBtn').click(function(e) {
+      var unid = $(this).data('unid');
+      $('#unit').val('');
+      $('#desc').val('');
+      $('#short_form').val('');
+      $('#physical').val('').change();
+      $('#factor').val('');
+      $('#basic_unity').val('');
+      $('#block').val('');
+      $.ajaxSetup({
+          headers: {
+              'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+          }
+      });
+      jQuery.ajax({
+          url: "{{ url('/common/basicSettings/units/view/') }}/"+ unid,
+          method: 'GET',
+          success: function(result){
+            jQuery.ajax({
+                url: "{{ url('/common/basicSettings/units/basicUnity/') }}/"+ unid,
+                method: 'GET',
+                success: function(basicUnity){
+                  for (var i = basicUnity.length - 1; i >= 0; i--) {
+                      console.log(basicUnity[i]);
+                      //$('#basic_unity').append('<option>'+basicUnity[i]['basu']+'<option>');
+                  }
+                  
+                }
+            });
+            $('#unit').val(result.unid);
+            $('#desc').val(result.dsca);
+            $('#short_form').val(result.dscs);
+            $('#physical').val(result.tccu).change();
+            $('#factor').val(result.conv);
+            $('#basic_unity').val(result.basu);
+            $('#block').val(result.crnd);
+          }});
+      });
+    });
+</script>
 </body>
 </html>
