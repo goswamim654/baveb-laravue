@@ -334,38 +334,844 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </li>
                 </ul>
               </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Product Master Data<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>List of Items</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Item Typess</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Item Groups</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Shop Groups</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Price Groups</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Item Signals</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Manufacturer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Alternate Items</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Business Partners<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>List of Customers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Freight Costs</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Shipping Methods</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Suppliers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Itemdata by Supplier</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Alternative Suppliers</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data Prodution<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Bill of Materials</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Workcenter</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Operations</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Routings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Hour Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Parameter Hours Accounting</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data Production<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Cost Rates</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Subcontracting Rates</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Surcharges</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Sucharges by Item</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data Finance<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Account Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Accounts</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Cost Centers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Control Accounts</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1" style="padding-top: 2px; float: left; padding-right: 4px;"></i>
+                  <p>Master Data Fair Stand<br>Builder<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Paramter ToDo</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Keys</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Packaging Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Activities</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Skills by Item</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Slills by Employee</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Packagings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1" style="padding-top: 2px; float: left; padding-right: 4px;"></i>
+                      <p>Price by Supplier and <br>Pricegroup</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Cost Rates</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Masterdata Shop<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Parameter Online Shop</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Payment Methodes</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Freight Costs</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data CRM<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Activity Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Keywords</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Status Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Success Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Incentives</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Others<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Print Labels</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>
-          <!-- <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fa fa-dashboard"></i>
-              <p>
-                Starter Pages
-                <i class="right fa fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link active">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Active Page</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Inactive Page</p>
-                </a>
-              </li>
-            </ul>
-          </li> -->
-          <li class="nav-item">
+          <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="fas fa-industry mr-1"></i>
               <p>
                 Distribution
+                <i class="right fa fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Procurement <i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{ route('units') }}" class="nav-link {{ Request::path() == 'common/basicSettings/units' ? 'active' : '' }}"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Inquiry</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>List of Inquirries</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Inquiry Results</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Inquiry Overview</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Purchase Order</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>List Purchase Orders</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Warehouse Receipt</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Inspection</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Purchase Invoice</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Sales Order Management <i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Callers List</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Standard Routes</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Sales Quotation</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>List Sales Quotations</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Cas Registers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Fast Entry</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Sales Orders</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>List Sales Orders</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Freight Costs</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Analysis Logistics</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Product Master Data<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>List of Items</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Item Typess</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Item Groups</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Shop Groups</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Price Groups</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Item Signals</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Manufacturer</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Alternate Items</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Business Partners<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>List of Customers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Freight Costs</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Shipping Methods</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Suppliers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Itemdata by Supplier</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Alternative Suppliers</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data Prodution<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Bill of Materials</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Workcenter</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Operations</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Routings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Hour Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Parameter Hours Accounting</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data Production<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Cost Rates</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Subcontracting Rates</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Surcharges</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Sucharges by Item</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data Finance<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Account Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Accounts</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Cost Centers</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Control Accounts</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1" style="padding-top: 2px; float: left; padding-right: 4px;"></i>
+                  <p>Master Data Fair Stand<br>Builder<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Paramter ToDo</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Keys</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Packaging Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Activities</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Skills by Item</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Slills by Employee</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Packagings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1" style="padding-top: 2px; float: left; padding-right: 4px;"></i>
+                      <p>Price by Supplier and <br>Pricegroup</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Cost Rates</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Masterdata Shop<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Parameter Online Shop</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Payment Methodes</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Freight Costs</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Master Data CRM<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Activity Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Keywords</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Status Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Success Types</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Incentives</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item has-treeview">
+                <a href="#" class="nav-link"> 
+                  <i class="far fa-circle ml-2 mr-1"></i>
+                  <p>Others<i class="right fa fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 
+                      <i class="far fa-circle ml-4 mr-1"></i>
+                      <p>Print Labels</p>
+                    </a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
           </li>
         </ul>
       </nav>
