@@ -396,125 +396,46 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- ./wrapper -->
 <div class="cd-cover-layer"></div>
 <!-- js -->
-  <script src="{{URL::asset('js/app.js')}}"></script>
-  <script src="http://themetrace.com/template/bracket/lib/datatables/jquery.dataTables.js"></script>
-  <script src="http://themetrace.com/template/bracket/lib/datatables-responsive/dataTables.responsive.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-  <script>
-//     $('#units').DataTable({
-//   responsive: true,
-//   language: {
-//     searchPlaceholder: 'Search...',
-//     sSearch: '',
-//     lengthMenu: '_MENU_ items',
-//   }
-// });
-$(document).keydown(function(e) { 
-      if (e.keyCode == 27) { 
-          $("#rowlinkModal").modal('hide');
-      } 
-  });
-table = $('#units').DataTable({
-    "stateSave": true,
-    "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],  
-    "responsive": true,
-      "language": {
-        'searchPlaceholder': 'Search...',
-        'sSearch': '',
-        'lengthMenu': '_MENU_ items'
-      },
-      "order": [[ 1, 'asc' ]],
-    'columnDefs': [{
-     'targets': 0,
-     'searchable': false,
-     'orderable': false,
-     'className': 'dt-body-center',
-     'render': function (data, type, full, meta){
-         return '<input type="checkbox" name="id[]" value="' + $('<div/>').text(data).html() + '">';
-     }
-    }]
-  });
+<script src="{{URL::asset('js/app.js')}}"></script>
+<script src="http://themetrace.com/template/bracket/lib/datatables/jquery.dataTables.js"></script>
+<script src="http://themetrace.com/template/bracket/lib/datatables-responsive/dataTables.responsive.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+<script src="{{URL::asset('js/custom.js')}}"></script>
 
-    jQuery(document).ready(function($){
-  var resizing = false,
-    searchForm = $('.cd-main-search'),
-    searchTrigger = $('.cd-search-trigger'),
-    coverLayer = $('.cd-cover-layer');
-  
-
-  function closeSearchForm() {
-    searchTrigger.removeClass('search-form-visible');
-    searchForm.removeClass('is-visible');
-    coverLayer.removeClass('search-form-visible');
-  }
-
-  //add the .no-pointerevents class to the <html> if browser doesn't support pointer-events property
-  ( !Modernizr.testProp('pointerEvents') ) && $('html').addClass('no-pointerevents');
-
-
-  searchTrigger.on('click', function(event){
-    event.preventDefault();
-    if( searchTrigger.hasClass('search-form-visible') ) {
-      searchForm.find('form').submit();
-    } else {
-      searchTrigger.addClass('search-form-visible');
-      coverLayer.addClass('search-form-visible');
-      searchForm.addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-        searchForm.find('input[type="search"]').focus().end().off('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend');
-      });
-    }
-  });
-
-  //close search form
-  searchForm.on('click', '.close', function(){
-    closeSearchForm();
-  });
-
-  coverLayer.on('click', function(){
-    closeSearchForm();
-  });
-  
-  $(document).keyup(function(event){
-    if( event.which=='27' ) closeSearchForm();
-  });
-
-});
-// load modal
-  </script>
-  <div class="modal fade" id="rowlinkModal">
-            <div class="modal-dialog modal-lg" role="document" style="width:800px;">
-              <div class="modal-content">
-                <div class="modal-header pd-y-20 pd-x-25">
-                  <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Units</h6>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-                </div>
-                <div class="modal-body pd-25 pd-x-35">
-                  <div class="row">
-                <div class="col-sm-2"><label>Units: </label></div>
-                <div class="col-sm-10 autor-value">cm</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-2"><label>Description: </label></div>
-                <div class="col-sm-10 autor-value">Zentimeter</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-2"><label>Short Form: </label></div>
-                <div class="col-sm-10 autor-value">cm</div>
-              </div>
-              <div class="row">
-                <div class="col-sm-2"><label>Physical: </label></div>
-                <div class="col-sm-10 autor-value">Piece</div>
-              </div>
-                </div><!-- modal-body -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div><!-- modal-dialog -->
-          </div>
+<div class="modal fade" id="rowlinkModal">
+  <div class="modal-dialog modal-lg" role="document" style="width:800px;">
+    <div class="modal-content">
+      <div class="modal-header pd-y-20 pd-x-25">
+        <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Units</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body pd-25 pd-x-35">
+        <div class="row">
+      <div class="col-sm-2"><label>Units: </label></div>
+      <div class="col-sm-10 autor-value">cm</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"><label>Description: </label></div>
+      <div class="col-sm-10 autor-value">Zentimeter</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"><label>Short Form: </label></div>
+      <div class="col-sm-10 autor-value">cm</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"><label>Physical: </label></div>
+      <div class="col-sm-10 autor-value">Piece</div>
+    </div>
+      </div><!-- modal-body -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary tx-11 tx-uppercase pd-y-12 pd-x-25 tx-mont tx-medium" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div><!-- modal-dialog -->
+</div>
 </body>
 </html>
