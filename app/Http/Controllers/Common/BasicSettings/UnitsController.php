@@ -27,7 +27,7 @@ class UnitsController extends Controller
         return $basicUnity;
     }
 
-    public function update(Request $request, $unid)
+    public function update(Request $request)
     {   
         // $unit = Unit::where('unid', $unid)->first();
 
