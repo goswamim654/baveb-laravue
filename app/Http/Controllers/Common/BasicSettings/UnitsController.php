@@ -22,13 +22,16 @@ class UnitsController extends Controller
 
     public function basicUnity($unid)
     {	
-    	$basicUnityArray = [];
     	$unit = Unit::where('unid', $unid)->first();
-    	$basicUnity = Unit::where('mndn', '001')->where('tccu', $unit->tccu)->get();
-    	foreach ($basicUnity as $key => $value) {
-    		echo $value->basu;
-    	}
-    	//print_r($basicUnity[]);
-		//return $basicUnityArray;
+    	$basicUnity = Unit::where('mndn', '001')->where('tccu', $unit->tccu)->pluck('unid');
+        return $basicUnity;
+    }
+
+    public function update(Request $request, $unid)
+    {   
+        // $unit = Unit::where('unid', $unid)->first();
+
+        // $unit = $request->input('unid');
+        // return $basicUnity;
     }
 }

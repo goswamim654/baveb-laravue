@@ -1,3 +1,6 @@
+<?php 
+$arrayPhysical = array('10' => 'Piece', '20' => 'Length', '30' =>'Area', '40'=> 'Volumina', '50' => 'Weight', '60' => 'Time');
+?>
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -1536,7 +1539,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 success: function(basicUnity){
                   for (var i = basicUnity.length - 1; i >= 0; i--) {
                       console.log(basicUnity[i]);
-                      //$('#basic_unity').append('<option>'+basicUnity[i]['basu']+'<option>');
+                      $('#basic_unity').append('<option>'+basicUnity[i]+'</option>');
                   }
                   
                 }
