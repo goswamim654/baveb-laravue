@@ -28,54 +28,8 @@ $arrayPhysical = array('10' => 'Piece', '20' => 'Length', '30' =>'Area', '40'=> 
 	        <div class="row">
 	          <div class="col-lg-12">
 	          	<!-- <example-component></example-component> -->
-	          	<div class="card card-success card-outline">
-			        <!-- <div class="card-header">
-			          <h3 class="card-title"></h3>
-			        </div> -->
-			        <!-- /.card-header -->
-			        <div class="card-body">
-			            <table id="units" class="table dataTable display responsive nowrap dataTable no-footer dtr-inline collapsed table-hover">
-			                <thead>
-			                    <tr>
-			                        <th>Units</th>
-			                        <th>Description</th>
-			                        <th>Shortform</th>
-			                        <th>Physical</th>
-			                        <th>Factor</th>
-			                        <th>Basic Unity</th>
-			                        <th>Block</th>
-			                        <th class="text-center no-sort">Action</th>
-			                        <th class="rowlink-skip dt-body-center no-sort"><a class="btn btn-danger btn-sm" style="padding: 0px 6px;" title="Delete"><i class="fas fa-trash-alt fa-xs text-white"></i></a></th>
-			                    </tr>
-			                </thead>
-			                <tbody data-link="row" class="rowlink">
-			                	@foreach($units as $unit)
-			                    <tr>
-			                    	<td><a data-toggle="modal" 
-														data-id="{{$unit->unid}}" data-type="unit" data-title="Units" href="#rowlinkModal">{{$unit->unid}}</a></td>
-			                        <td>{{$unit->dsca}}
-			                        </td>
-			                        <td>{{$unit->dscs}}</td>
-			                        <td>
-			                        	@foreach($arrayPhysical as $key => $physical) 
-			                        		@if($unit->tccu == $key) {{ $physical }} @endif
-			                        	@endforeach
-			                        </td>
-			                        <td>{{$unit->conv}}</td>
-			                        <td>{{$unit->basu}}</td>
-			                        <td>{{$unit->crnd}}</td>
-			                        <td class="text-center rowlink-skip">
-			                        	<a data-toggle="modal" data-unid="{{$unit->unid}}" href="#editModal" class="btn btn-warning btn-sm editModalBtn" style="height: 23px; padding: 0px 6px;"><i class="fas fa-pencil-alt fa-xs"></i></a>
-			                        </td>
-			                        <td class="rowlink-skip"></td>
-			                    </tr>
-			                    @endforeach
-			                </tbody>
-			          </table>
-			        </div>
-			        <!-- /.card-body -->
-			    </div>
-    <!-- /.card -->
+	          	<list-unit-component></list-unit-component>
+    			<!-- /.card -->
 	          <!-- /.col-md-12 -->
 	        </div>
 	        <!-- /.row -->

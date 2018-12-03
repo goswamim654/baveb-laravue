@@ -10,8 +10,12 @@ class UnitsController extends Controller
 {
     public function index()
     {	
-    	$units = Unit::all();
-        return view('common.basicSettings.units.index')->with('units',$units);;
+        return view('common.basicSettings.units.index');
+    }
+
+    public function viewall()
+    {   
+        return $units = Unit::all();
     }
 
     public function show($unid)
